@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int hours;
+    scanf("%d", &hours);
+
+    int minutes = hours * 60;
+    int seconds = hours * 3600;
+
+    printf("%d hours = %d minutes = %d seconds\n", hours, minutes, seconds);
+
+    return 0;
+}
+
+/*
+Input:
+2
+
+Output:
+2 hours = 120 minutes = 7200 seconds
+*/
