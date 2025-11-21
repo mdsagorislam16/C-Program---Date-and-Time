@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int h, m, s;
+    scanf("%d %d %d", &h, &m, &s);
+
+    char *period = (h >= 12) ? "PM" : "AM";
+    int hour = (h == 0) ? 12 : (h > 12 ? h-12 : h);
+
+    printf("%02d:%02d:%02d %s\n", hour, m, s, period);
+
+    return 0;
+}
+
+/*
+Input:
+14 30 45
+
+Output:
+02:30:45 PM
+*/
